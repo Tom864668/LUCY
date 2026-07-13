@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LUCY Investment Calculator</title>
+
+<style>
+body{
+    background:#050505;
+    color:white;
+    font-family:Arial,sans-serif;
+    padding:40px;
+}
+
+.container{
+    max-width:600px;
+    margin:auto;
+    background:#111;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #D4AF37;
+}
+
+h1{
+    color:#D4AF37;
+    text-align:center;
+}
+
+input, button{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border-radius:8px;
+    border:none;
+}
+
+input{
+    background:#222;
+    color:white;
+}
+
+button{
+    background:#D4AF37;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.result{
+    margin-top:25px;
+    padding:20px;
+    background:#0b0b0b;
+    border-radius:10px;
+    border:1px solid #333;
+}
+
+table{
+    width:100%;
+    margin-top:20px;
+    border-collapse:collapse;
+}
+
+td,th{
+    padding:12px;
+    border-bottom:1px solid #333;
+}
+
+th{
+    background:#D4AF37;
+    color:black;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>LUCY Projection Calculator</h1>
+
+<p>Enter investment amount (UGX)</p>
+
+<input id="amount" type="number" placeholder="Example: 100000">
+
+<button onclick="calculate()">
+Calculate
+</button>
+
+<div class="result" id="result">
+Enter amount to see projection
+</div>
+
+</div>
+
+
+<script>
+
+function calculate(){
+
+let amount = Number(document.getElementById("amount").value);
+
+let dailyIncome = amount * 0.20;
+
+let totalIncome = dailyIncome * 20;
+
+let totalValue = amount + totalIncome;
+
+
+document.getElementById("result").innerHTML = `
+
+<table>
+
+<tr>
+<th>Description</th>
+<th>Amount (UGX)</th>
+</tr>
+
+<tr>
+<td>Starting Amount</td>
+<td>${amount.toLocaleString()}</td>
+</tr>
+
+<tr>
+<td>20% Daily Projection</td>
+<td>${dailyIncome.toLocaleString()} / day</td>
+</tr>
+
+<tr>
+<td>20 Day Projection Income</td>
+<td>${totalIncome.toLocaleString()}</td>
+</tr>
+
+<tr>
+<td>Total Projected Value</td>
+<td>${totalValue.toLocaleString()}</td>
+</tr>
+
+</table>
+
+<p style="color:#aaa;margin-top:15px;">
+Projection only. Actual investment results are not guaranteed.
+</p>
+
+`;
+
+}
+
+</script>
+
+</body>
+</html>

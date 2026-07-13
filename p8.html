@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LUCY - Support</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+.container{
+max-width:1000px;
+margin:50px auto;
+padding:20px;
+}
+
+.title{
+color:#D4AF37;
+font-size:35px;
+margin-bottom:30px;
+}
+
+
+.grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+
+}
+
+
+.card{
+
+background:#111;
+border:1px solid #D4AF37;
+border-radius:15px;
+padding:30px;
+
+}
+
+
+.card h2{
+
+color:#D4AF37;
+margin-bottom:20px;
+
+}
+
+
+.info{
+
+margin-bottom:15px;
+color:#ccc;
+
+}
+
+
+input, textarea{
+
+width:100%;
+padding:15px;
+margin-bottom:15px;
+background:#1a1a1a;
+border:1px solid #333;
+border-radius:8px;
+color:white;
+outline:none;
+
+}
+
+
+textarea{
+
+height:130px;
+resize:none;
+
+}
+
+
+button{
+
+background:#D4AF37;
+color:black;
+padding:15px 30px;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+
+button:hover{
+
+opacity:.9;
+
+}
+
+
+@media(max-width:700px){
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1 class="title">
+Customer Support
+</h1>
+
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+
+<h2>
+Contact Information
+</h2>
+
+
+<div class="info">
+
+<strong>Company:</strong> LUCY Investment
+
+</div>
+
+
+<div class="info">
+
+<strong>Support Contact:</strong> ISMA SEMAKULA
+
+</div>
+
+
+<div class="info">
+
+<strong>Phone:</strong> 0768786458
+
+</div>
+
+
+<div class="info">
+
+<strong>Location:</strong> Kampala, Uganda
+
+</div>
+
+
+<div class="info">
+
+<strong>Support Hours:</strong> Monday - Saturday
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+Send Message
+</h2>
+
+
+<form>
+
+
+<input 
+type="text"
+placeholder="Your Name">
+
+
+
+<input 
+type="email"
+placeholder="Your Email">
+
+
+
+<input 
+type="text"
+placeholder="Subject">
+
+
+
+<textarea placeholder="Your Message"></textarea>
+
+
+
+<button>
+Send Message
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

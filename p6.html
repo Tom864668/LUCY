@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>LUCY - Referrals</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+.container{
+max-width:1000px;
+margin:40px auto;
+padding:20px;
+}
+
+.title{
+color:#D4AF37;
+font-size:32px;
+margin-bottom:30px;
+}
+
+.card{
+
+background:#111;
+border:1px solid #D4AF37;
+border-radius:15px;
+padding:30px;
+margin-bottom:25px;
+
+}
+
+.card h2{
+
+color:#D4AF37;
+margin-bottom:15px;
+
+}
+
+.referral-box{
+
+display:flex;
+gap:10px;
+}
+
+.referral-box input{
+
+flex:1;
+padding:15px;
+background:#1a1a1a;
+border:1px solid #333;
+color:white;
+border-radius:8px;
+
+}
+
+button{
+
+padding:15px 25px;
+background:#D4AF37;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+button:hover{
+
+opacity:.9;
+
+}
+
+
+.stats{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+
+}
+
+.stat{
+
+background:#111;
+padding:25px;
+border-radius:12px;
+border:1px solid #222;
+
+}
+
+.stat h3{
+
+color:#D4AF37;
+
+}
+
+.number{
+
+font-size:30px;
+margin-top:10px;
+
+}
+
+
+table{
+
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+
+}
+
+
+th{
+
+background:#D4AF37;
+color:black;
+padding:15px;
+
+}
+
+
+td{
+
+padding:15px;
+border-bottom:1px solid #222;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1 class="title">
+Referral Center
+</h1>
+
+
+<div class="card">
+
+
+<h2>Your Referral Link</h2>
+
+
+<p>
+Share your personal link with friends.
+</p>
+
+
+<br>
+
+
+<div class="referral-box">
+
+
+<input 
+id="link"
+value="https://lucyinvestment.com/register?ref=LUCY12345"
+readonly>
+
+
+<button onclick="copyLink()">
+Copy
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="stats">
+
+
+<div class="stat">
+
+<h3>Total Invites</h3>
+
+<div class="number">
+0
+</div>
+
+</div>
+
+
+
+<div class="stat">
+
+<h3>Registered Users</h3>
+
+<div class="number">
+0
+</div>
+
+</div>
+
+
+
+<div class="stat">
+
+<h3>Referral Rewards</h3>
+
+<div class="number">
+0
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<h2>Referral History</h2>
+
+
+<table>
+
+
+<tr>
+
+<th>Date</th>
+
+<th>User</th>
+
+<th>Status</th>
+
+</tr>
+
+
+<tr>
+
+<td>-</td>
+
+<td>No referrals yet</td>
+
+<td>-</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+</div>
+
+
+<script>
+
+function copyLink(){
+
+let link=document.getElementById("link");
+
+link.select();
+
+navigator.clipboard.writeText(link.value);
+
+alert("Referral link copied!");
+
+}
+
+</script>
+
+
+</body>
+
+</html>

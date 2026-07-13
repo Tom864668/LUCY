@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LUCY Investment</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+/* Splash Screen */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:9999;
+animation:fadeOut 1s ease forwards;
+animation-delay:3s;
+}
+
+.logo{
+font-size:70px;
+font-weight:bold;
+color:#d4af37;
+text-shadow:0 0 30px gold;
+animation:pulse 2s infinite;
+}
+
+.tag{
+margin-top:20px;
+font-size:22px;
+color:white;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.08);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+@keyframes fadeOut{
+
+to{
+opacity:0;
+visibility:hidden;
+}
+
+}
+
+/* Navbar */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#111;
+border-bottom:1px solid #d4af37;
+}
+
+nav h2{
+
+color:#d4af37;
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+
+color:#d4af37;
+}
+
+/* Hero */
+
+.hero{
+
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+
+font-size:60px;
+color:#d4af37;
+}
+
+.hero p{
+
+margin-top:20px;
+font-size:20px;
+max-width:700px;
+}
+
+.btn{
+
+margin-top:40px;
+display:inline-block;
+padding:15px 40px;
+background:#d4af37;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+
+transform:scale(1.05);
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:80px 10%;
+}
+
+.card{
+
+background:#111;
+padding:30px;
+border:1px solid #d4af37;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+}
+
+footer{
+
+background:#111;
+padding:30px;
+text-align:center;
+margin-top:50px;
+border-top:1px solid #d4af37;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="loader">
+
+<div class="logo">LUCY</div>
+
+<div class="tag">Invest With Confidence</div>
+
+</div>
+
+<nav>
+
+<h2>LUCY</h2>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">About</a></li>
+
+<li><a href="#">Plans</a></li>
+
+<li><a href="#">Contact</a></li>
+
+<li><a href="#">Login</a></li>
+
+<li><a href="#">Register</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Grow Your Wealth</h1>
+
+<p>
+
+Welcome to LUCY Investment.
+
+A modern investment platform designed with security, transparency and professional service.
+
+</p>
+
+<a href="#" class="btn">Get Started</a>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+
+<h2>Secure Platform</h2>
+
+<p>Your account is protected with advanced security features.</p>
+
+</div>
+
+<div class="card">
+
+<h2>Easy Deposits</h2>
+
+<p>Submit deposit requests and track them from your dashboard after verification.</p>
+
+</div>
+
+<div class="card">
+
+<h2>Referral Program</h2>
+
+<p>Invite friends using your unique referral link and track your referrals.</p>
+
+</div>
+
+<div class="card">
+
+<h2>24/7 Support</h2>
+
+<p>Our support team is always ready to help.</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 LUCY Investment. All Rights Reserved.
+
+</footer>
+
+</body>
+
+</html>

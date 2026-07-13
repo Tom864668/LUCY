@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>LUCY Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#050505;
+color:#fff;
+}
+
+.sidebar{
+position:fixed;
+width:250px;
+height:100vh;
+background:#0d0d0d;
+border-right:1px solid #D4AF37;
+padding:30px;
+}
+
+.logo{
+font-size:34px;
+font-weight:bold;
+color:#D4AF37;
+text-align:center;
+margin-bottom:50px;
+}
+
+.menu a{
+display:block;
+padding:15px;
+margin-bottom:10px;
+text-decoration:none;
+color:white;
+border-radius:8px;
+transition:.3s;
+}
+
+.menu a:hover{
+background:#D4AF37;
+color:black;
+}
+
+.main{
+margin-left:250px;
+padding:40px;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.user{
+font-size:18px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+border:1px solid #222;
+border-radius:15px;
+padding:25px;
+transition:.3s;
+}
+
+.card:hover{
+border-color:#D4AF37;
+transform:translateY(-5px);
+}
+
+.card h4{
+color:#D4AF37;
+margin-bottom:15px;
+}
+
+.amount{
+font-size:28px;
+font-weight:bold;
+}
+
+table{
+width:100%;
+margin-top:40px;
+border-collapse:collapse;
+}
+
+table th{
+background:#D4AF37;
+color:black;
+padding:15px;
+}
+
+table td{
+padding:15px;
+border-bottom:1px solid #222;
+}
+
+.button{
+display:inline-block;
+padding:12px 22px;
+background:#D4AF37;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+margin-top:15px;
+}
+
+.button:hover{
+opacity:.9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+LUCY
+</div>
+
+<div class="menu">
+
+<a href="#">Dashboard</a>
+
+<a href="#">Deposit</a>
+
+<a href="#">Withdraw</a>
+
+<a href="#">Referrals</a>
+
+<a href="#">Transactions</a>
+
+<a href="#">Profile</a>
+
+<a href="#">Support</a>
+
+<a href="#">Logout</a>
+
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+
+<h2>Dashboard</h2>
+
+<div class="user">
+Welcome, User
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h4>Available Balance</h4>
+<div class="amount">UGX 0</div>
+</div>
+
+<div class="card">
+<h4>Verified Deposits</h4>
+<div class="amount">UGX 0</div>
+</div>
+
+<div class="card">
+<h4>Pending Withdrawals</h4>
+<div class="amount">UGX 0</div>
+</div>
+
+<div class="card">
+<h4>Referral Rewards</h4>
+<div class="amount">UGX 0</div>
+</div>
+
+</div>
+
+<a class="button" href="#">
+Submit Deposit
+</a>
+
+<a class="button" href="#">
+Request Withdrawal
+</a>
+
+<h3 style="margin-top:40px;color:#D4AF37;">
+Recent Transactions
+</h3>
+
+<table>
+
+<tr>
+
+<th>Date</th>
+
+<th>Type</th>
+
+<th>Amount</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>No transactions yet</td>
+
+<td>-</td>
+
+<td>-</td>
+
+<td>-</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
